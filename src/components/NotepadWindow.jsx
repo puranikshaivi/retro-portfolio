@@ -71,12 +71,14 @@ const StatusBar = styled.div`
 
 const facts = [
   "I love reading books and I have a big collection at our house in Mumbai.",
-  "A lot of Harry Potter, Percy Jackson, LOTR and Narnia, but also Agatha Christie and Feluda.",
-  "Infinity War is better than Endgame.",
-  "Kinda a perfectionist, and also a bit of a procrastinator, which is a weird combo but not uncommon apparently.",
-  "Coffee addict.",
-  "I wish I had a cat or two.",
-  "I played Valorant for a total of 4 days. Only."
+  "Harry Potter, Percy Jackson, LOTR and Narnia, but also Agatha Christie and Feluda.",
+  "Infinity War is better than Endgame. And Loki is the best.",
+  "Kind of a perfectionist, and also a bit of a procrastinator, which is a weird combo but not uncommon apparently.",
+  "Coffee is the secret of my energy.",
+  "Anyone with a cat, or multiple, is automatically my friend without introduction.",
+  "I have a Valorant sticker on my laptop and I've played for a total of 4 days only.",
+  "I love playing card games, and I am insanely competitive.",
+  "Also love playing carrom and pool though I am not very good. Jk, I am very good.",
 
 ];
 

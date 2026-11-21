@@ -295,7 +295,7 @@ const ContactWindow = ({ variant = 'socials' }) => {
 
             <SocialLink href="https://substack.com/@pshaivi" target="_blank" rel="noreferrer">
               <LinkText>
-                <LinkLabel>Recently started writing on</LinkLabel>
+                <LinkLabel>Sometimes writing on</LinkLabel>
                 <LinkTitle>Substack</LinkTitle>
               </LinkText>
               <img

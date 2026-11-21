@@ -22,9 +22,10 @@ const Page = styled.div`
   overflow: hidden;
   background: linear-gradient(
     180deg,
-    #006363 0%,
-    #017474 50%,
-     #049393 80%,
+    #004d4d 0%,
+    #005f5f 55%,
+    #017474 75%,
+    #049393 90%,
     rgba(255, 255, 255, 0) 100%
   );
 
@@ -42,6 +43,7 @@ const Intro = styled.div`
 
   @media (max-width: 600px) {
     margin-top: 0;
+    padding: 14px;
   }
 `;
 
@@ -92,7 +94,10 @@ const NameTag = styled.div`
 
 const Body = styled.p`
   font-size: 15px;
-  line-height: 1.7;
+  font-weight: 500;
+  line-height: 1.75;
+  text-shadow: 1px 1px 0 #433f3f, 2px 2px 3px rgba(0, 0, 0, 0.35);
+
   ${desktopLabel}
 `;
 
@@ -326,14 +331,18 @@ const LandingPage = () => {
           Something about me
         </NameTag>
         <Body>
-          Hi, I’m Shaivi. I’m a software engineer and currently studying for my MSc in Computer Science.
-          <br /><br />
-          I’m naturally curious, and I tend to get interested in a lot of different things. Right now, that means I’m exploring AI and machine learning for my master's, and also recently gotten into game development and design.
-          <br />
-          Outside of tech, I’m usually reading, painting, listening to music, or sitting at a piano and playing my favourite songs. I like having creative things to do, which is why I built this page!
-          <br /><br />
-          Check around to discover my work and a little more about me!
-        </Body>
+  Hi, I'm Shaivi Puranik, a software engineer and MSc Computer Science
+  student at TU Eindhoven, open to software engineering roles and opportunities to grow.
+</Body>
+
+<Body>
+  Jack of all trades, happily. I've spent my time building for the web, designing UIs and APIs both, and now exploring AI and machine learning through my master's. I like following a feature from the interface all the way down to the data. I'm always asking why it's built that way, and how it could be better.
+  </Body>
+
+<Body>
+  Away from the screen, I'm usually reading, painting, or at the piano. I like having creative things to do, which is why I built this page! Poke around the desktop to find out more.
+</Body>
+
       </Intro>
 
       <Stack>
