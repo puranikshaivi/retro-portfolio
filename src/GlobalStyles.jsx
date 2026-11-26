@@ -29,6 +29,13 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   html, body, #root {
@@ -45,6 +52,22 @@ const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     overflow-x: hidden;
     background: #ffffff;
+  }
+
+  body.shutdown-crt {
+    overflow: hidden;
+    background: #000;
+  }
+
+  body.shutdown-crt #root {
+    transform-origin: center;
+    animation: shutdown-crt-collapse 1200ms cubic-bezier(0.65, 0, 0.85, 0.25) forwards;
+  }
+
+  @keyframes shutdown-crt-collapse {
+    0% { transform: scaleY(1) scaleX(1); }
+    70% { transform: scaleY(0.01) scaleX(1); }
+    100% { transform: scaleY(0.01) scaleX(0); }
   }
 `;
 
