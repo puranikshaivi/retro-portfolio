@@ -1,6 +1,7 @@
 import { AppBar, Toolbar, Button, Separator, MenuList, MenuListItem } from 'react95';
 import styled from 'styled-components';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import ShutdownExperience from './ShutdownExperience';
 
 const Right = styled.div`
   display: flex;
@@ -105,7 +106,12 @@ const NavBar = () => {
   );
   const [muted, setMuted] = useState(false);
   const [startOpen, setStartOpen] = useState(false);
+  const [shutdownOpen, setShutdownOpen] = useState(false);
   const startRef = useRef(null);
+
+  const closeShutdown = useCallback(() => {
+    setShutdownOpen(false);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -207,8 +213,8 @@ const NavBar = () => {
               <Separator />
               <MenuListItem
                 onClick={() => {
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
                   setStartOpen(false);
+                  setShutdownOpen(true);
                 }}
               >
                 <MenuIcon
@@ -277,6 +283,7 @@ const NavBar = () => {
           <Button variant="menu">{time}</Button>
         </Right>
       </Toolbar>
+      {shutdownOpen && <ShutdownExperience onClose={closeShutdown} />}
     </StyledAppBar>
   );
 };
