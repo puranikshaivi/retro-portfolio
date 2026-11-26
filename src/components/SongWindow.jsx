@@ -92,6 +92,14 @@ const CtrlButton = styled(Button)`
   white-space: nowrap;
 `;
 
+const ControlIcon = styled.svg`
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  fill: currentColor;
+`;
+
 const SongWindow = ({
   coverSrc = '../assets/purple-rain-album.jpg',
   artist = 'Prince and the Revolution',
@@ -122,11 +130,31 @@ const SongWindow = ({
             </Row>
 
             <Controls>
-              <CtrlButton>|◀◀</CtrlButton>
-              <CtrlButton>▶</CtrlButton>
-              <CtrlButton>❚❚</CtrlButton>
-              <CtrlButton>■</CtrlButton>
-              <CtrlButton>▶▶|</CtrlButton>
+              <CtrlButton type="button" aria-label="Previous track">
+                <ControlIcon viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M2 3h2v10H2zM10 3 5 8l5 5zM15 3 10 8l5 5z" />
+                </ControlIcon>
+              </CtrlButton>
+              <CtrlButton type="button" aria-label="Play">
+                <ControlIcon viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M4 2.5 14 8 4 13.5z" />
+                </ControlIcon>
+              </CtrlButton>
+              <CtrlButton type="button" aria-label="Pause">
+                <ControlIcon viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M3 2.5h4v11H3zM9 2.5h4v11H9z" />
+                </ControlIcon>
+              </CtrlButton>
+              <CtrlButton type="button" aria-label="Stop">
+                <ControlIcon viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M3 3h10v10H3z" />
+                </ControlIcon>
+              </CtrlButton>
+              <CtrlButton type="button" aria-label="Next track">
+                <ControlIcon viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M1 3l5 5-5 5zM6 3l5 5-5 5zM12 3h2v10h-2z" />
+                </ControlIcon>
+              </CtrlButton>
             </Controls>
           </InfoCol>
         </Body>
