@@ -36,7 +36,7 @@ const Statement = styled.p`
   text-align: center;
   color: #333;
   margin: 0 0 48px;
-  max-width: 600px;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 
@@ -71,7 +71,7 @@ const ContactSection = () => {
       <Container>
         <Heading>Get in Touch</Heading>
         <Statement>
-          If you scrolled this far, I think we should be friends. Connect with me on my socials!
+          If you scrolled this far, I think we should be friends!! ₍^. .^₎⟆ <br /> Whether you have a cool project in mind, an opportunity to share, or just want to say hello, I'd love to hear from you. 
         </Statement>
 
         <Layout>
