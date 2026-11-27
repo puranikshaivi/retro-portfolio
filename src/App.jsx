@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage';
 import ExperienceSection from './components/ExperienceSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
+import { Analytics } from '@vercel/analytics/react';
 
 const AppShell = styled.div`
   padding-top: 48px;
@@ -13,16 +14,19 @@ const AppShell = styled.div`
 
 function App() {
   return (
-    <ThemeProvider theme={original}>
-      <GlobalStyles />
-      <AppShell>
-        <NavBar />
-        <LandingPage />
-        <ExperienceSection />
-        <SkillsSection />
-        <ContactSection />
-      </AppShell>
-    </ThemeProvider>
+    <>
+      <ThemeProvider theme={original}>
+        <GlobalStyles />
+        <AppShell>
+          <NavBar />
+          <LandingPage />
+          <ExperienceSection />
+          <SkillsSection />
+          <ContactSection />
+        </AppShell>
+      </ThemeProvider>
+      <Analytics />
+    </>
   );
 }
 
