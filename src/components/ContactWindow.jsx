@@ -250,7 +250,7 @@ const ContactWindow = ({ variant = 'socials' }) => {
 
             <FormGroup>
               <Label htmlFor="message">Your message</Label>
-              <TextArea id="message" name="message" placeholder="Tell me a bit about your project or idea..." value={form.message} onChange={handleChange} />
+              <TextArea id="message" name="message" placeholder="Hey! I'd love to hear from you..." value={form.message} onChange={handleChange} />
             </FormGroup>
 
             <FormActionRow>

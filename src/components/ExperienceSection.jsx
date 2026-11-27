@@ -308,7 +308,7 @@ const experiences = [
     id: 'icici',
     title: 'Software Development Engineer at ICICI Lombard',
     description:
-      "Spent a year and half (was also an intern here) building and shipping features for ICICI Lombard's production website as part of the frontend engineering team. Worked primarily with Angular, building reusable components, integrating REST APIs, handling validation and UI state, and helping keep production stable through testing and post deployment fixes. Also got to work closely with engineers, QA, and product teams in an Agile environment. Picked up an award for outstanding performance along the way ;)",
+      "Spent a year and half (was also an intern here) building and shipping features for ICICI Lombard's production website as part of the frontend engineering team. Worked primarily with Angular, building reusable components, integrating REST APIs, handling validation and UI state, and helping keep production stable through testing and post deployment fixes. Also got to work closely with engineers, QA, and product teams in an Agile environment. Picked up an award for outstanding performance along the way >ᴗ<.",
     date: 'Feb 2025 - August 2026',
     defaultOpen: true,
   },
